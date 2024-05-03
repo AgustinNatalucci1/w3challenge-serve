@@ -18,12 +18,13 @@ Primero hay que configurar la conexión con una Base de Datos MySQL:
 
 Agregar un archivo .env en el proyecto
 
+*Ejemplo:*
 ```bash
-DB_USER=
-DB_PASS=
-DB_PORT=
-DB_DATABASE=
-DB_HOTS=
+DB_USER=root
+DB_PASS=12345
+DB_PORT=3306
+DB_NAME=test_db
+DB_HOTS=localhost
 ```
 
 Por ultimo, ejecutar:
