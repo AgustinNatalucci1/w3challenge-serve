@@ -16,18 +16,14 @@ En estre proyecto utilice las migraciones de [Sequelize](https://sequelize.org/d
 
 Primero hay que configurar la conexión con una Base de Datos MySQL:
 
-para esto hay que configurar la sigientes variables en config/config.json
+Agregar un archivo .env en el proyecto
 
 ```bash
-{
-  "development": {
-    "username": "",
-    "password": "",
-    "database": "",
-    "host": "localhost",
-    "dialect": "mysql"
-  }
-}
+DB_USER=
+DB_PASS=
+DB_PORT=
+DB_DATABASE=
+DB_HOTS=
 ```
 
 Por ultimo, ejecutar:
