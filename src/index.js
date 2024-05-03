@@ -21,20 +21,6 @@ app.get('/getList/:str', async (req, res) => {
   };
 });
 
-// async function getPaisesByStr(str) {
-//   let whereClause = {};
-//   for (let i = 0; i < str.length; i++) {
-//     whereClause[`pais${i}`] = { [Op.like]: `%${str[i]}%` };
-//   }
-
-//   const paises = await Paises.findAll({
-//     where: whereClause,
-//     limit: 5,
-//   });
-
-//   return paises;
-// }
-
 async function getPaisesByStr(str) {
   let whereClause = [];
   for (let i = 0; i < str.length; i++) {
@@ -52,7 +38,6 @@ async function getPaisesByStr(str) {
 
   paises.map((p) => {
     poblacionTotal = poblacionTotal + p.poblacion;
-    console.log("Poblacion Total: ", poblacionTotal);
   });
 
   paises.map((p) => {
